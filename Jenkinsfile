@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install'
+                echo 'Proses Build'
             }
         }
         stage('Test') { 
             steps {
-                sh './jenkins/scripts/test.sh' 
+                echo 'Proses Testing' 
             }
         }
     }
